@@ -1,0 +1,31 @@
+#scroll {
+  display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99;  
+}
+
+.toUp {
+  background: linear-gradient(#17d396, #07f7f7);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 45px;
+  transition: 0.4s;
+  width: 45px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.toUp:hover {
+  background: linear-gradient(#07f7f7, #17d396);
+}
+
+.up {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin-top: 10px;
+}

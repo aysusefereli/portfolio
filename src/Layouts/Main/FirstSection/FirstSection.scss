@@ -1,0 +1,183 @@
+.firstSection {
+  background-image: url("https://comeout.netlify.app/demo/default/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  position: relative; 
+  top: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #17d396, #07f7f7);
+    opacity: 0.78;
+    z-index: 1;
+  }
+
+  .mainHeader {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    justify-content: center;
+    height: 100%;
+
+    .knowMe {
+      background: -webkit-linear-gradient(#062aca, #9401d9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Kaushan Script", Sans-serif;
+      display: inline;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 0.5em;
+    }
+
+    .headerTexts {
+      line-height: 26px;
+    }
+
+    .hello {
+      font-size: 120px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      color: white;
+    }
+
+    .AS {
+      font-size: 84px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .FD {
+      color: white;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      font-size: 25px;
+    }
+
+    .photos {
+      position: relative;
+    }
+
+    .myPhoto {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      z-index: 4;
+      top: 100%;
+      left: 40px;
+      animation: riseUp 1s ease-out forwards;
+    }
+
+    .devs {
+      width: 520px;
+      height: 500px;
+      z-index: 2;
+      position: relative;
+      right: 90px;
+      bottom: 140px;
+      transform-origin: center;
+      opacity: 0;
+      animation: rotateOnLoad 2s ease-out forwards 1s;
+    }
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateOnLoad {
+  0% {
+    transform: rotateZ(-300deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateZ(-5.38deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainHeader {
+    margin-left: 10px !important;
+    .headerTexts {
+      margin-left: 50px;
+
+      .hello {
+        font-size: 100px;
+      }
+
+      .AS {
+        font-size: 60px;
+      }
+
+      .FD {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .mainHeader {
+    margin-left: 0 !important;
+    .headerTexts {
+      margin-left: 20px;
+
+      .hello {
+        font-size: 55px;
+      }
+
+      .AS {
+        font-size: 35px;
+      }
+
+      .FD {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .mainHeader {
+    .headerTexts {
+      margin-left: 20px;
+
+      .hello {
+        font-size: 55px;
+      }
+
+      .AS {
+        font-size: 35px;
+      }
+
+      .FD {
+        font-size: 15px;
+      }
+    }
+  }
+}

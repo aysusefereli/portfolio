@@ -1,0 +1,136 @@
+.skillsPage {
+  position: relative;
+  top: 250px;
+  background-color: #313741;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.skillsText {
+  background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.skillsIcon {
+  width: 70px;
+  height: 55px;
+}
+
+.menu {
+  padding: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  color: black;
+  margin-left: 230px;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 99em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+  background-color: #eee;
+}
+
+.link:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border-radius: 99em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+}
+
+.link:hover,
+.link:focus {
+  outline: 0;
+  width: 180px;
+}
+
+.link:hover:before,
+.link:hover .link-title,
+.link:focus:before,
+.link:focus .link-title {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: block;
+  text-align: center;
+  text-indent: 28px;
+  width: 100%;
+}
+
+.skillsIcon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  position: absolute;
+  left: 20px;
+}
+
+@media (max-width: 900px) {
+  .skillsPage .menu {
+    margin-left: 90px;
+  }
+}
+@media (max-width: 450px) {
+  .skillsPage .menu {
+    margin-left: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skillsPage .skillsIcon {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+  }
+  .skillsPage .link {
+    width: 50px;
+    height: 50px;
+  }
+  .skillsPage .link:hover,
+  .skillsPage .link:focus {
+    width: 130px;
+  }
+  .skillsPage .link:before {
+    transform: translateX(100%);
+  }
+  .skillsPage .link:hover:before,
+  .skillsPage .link:focus:before {
+    transform: translateX(0);
+  }
+  .skillsPage .link-title {
+    transform: translateX(100%);
+    font-size: 10px;
+  }
+  .skillsPage .link:hover .link-title,
+  .skillsPage .link:focus .link-title {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=Skills.css.map */

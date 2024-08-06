@@ -1,0 +1,91 @@
+.contactPage {
+  position: relative;
+  top: 250px;
+  background-color: #313741;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contactPage .contactText {
+  background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+.contactPage .contactImg {
+  width: 400px;
+  height: 350px;
+}
+.contactPage .contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.contactPage .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.contactPage .form-container .form-content {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.contactPage .form-container .form-content .nameAndEmail {
+  display: flex;
+  flex-direction: column;
+}
+.contactPage .form-container .form-content .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contactPage .form-container .form-content .form-group input,
+.contactPage .form-container .form-content .form-group textarea {
+  padding: 0.75rem;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #e6e3e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contactPage .form-container .form-content .form-group input:focus,
+.contactPage .form-container .form-content .form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.contactPage .form-container .form-content .btn {
+  cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  border: none;
+  -webkit-box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 14px 22px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .contactPage .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .contactPage .contactImg {
+    width: 300px;
+    height: 250px;
+  }
+  .contactPage input,
+  .contactPage textarea {
+    width: 300px !important;
+  }
+}/*# sourceMappingURL=Contact.css.map */

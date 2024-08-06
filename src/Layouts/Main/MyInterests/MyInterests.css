@@ -1,0 +1,92 @@
+.interestsPage {
+  position: relative;
+  top: 100px;
+}
+.interestsPage .container .interest {
+  font-size: 35px;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to left, #17d396, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-left: 12%;
+}
+.interestsPage .container .icons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  gap: 60px;
+  color: #17d396;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.interestsPage .container .icons #icons {
+  border: 1px solid #17d396;
+  border-radius: 50%;
+  font-size: 35px;
+  height: 90px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 90px;
+  position: relative;
+}
+.interestsPage .container .icons #icons:hover {
+  background: linear-gradient(#17d396, #07f7f7);
+  color: white;
+}
+.interestsPage .container .icons #icons:hover .iconsText {
+  display: block;
+}
+.interestsPage .container .icons #icon {
+  margin: 25px;
+}
+.interestsPage .container .icons .iconsText {
+  display: none;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 900px) {
+  .interestsPage .container .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    justify-items: center;
+  }
+  .interestsPage .container .icons .iconsText {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .interestsPage {
+    flex-direction: column;
+  }
+}
+@media (max-width: 391px) {
+  .interestsPage {
+    flex-direction: column;
+  }
+  .interestsPage .icons {
+    margin: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .interestsPage {
+    flex-direction: column;
+  }
+}
+@media (max-width: 330px) {
+  .interestsPage {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=MyInterests.css.map */

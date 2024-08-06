@@ -1,0 +1,122 @@
+.aboutPage {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 200px;
+  background-color: #22252c;
+}
+.aboutPage .resume {
+  text-align: center;
+}
+.aboutPage .resume .myPhotoContainer {
+  position: relative;
+  display: inline-block;
+}
+.aboutPage .resume .myPhotoContainer:before {
+  content: "";
+  border: 7px solid #17d396;
+  height: 100%;
+  left: 35px;
+  top: -45px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.aboutPage .resume .myPhoto {
+  width: 320px;
+  height: 370px;
+}
+.aboutPage .resume .resume-btn button {
+  cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  -webkit-box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 14px 22px;
+  text-align: center;
+  text-decoration: none;
+}
+.aboutPage .resume .resume-btn button a {
+  text-decoration: none;
+  cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+  color: white;
+}
+.aboutPage .aboutMe {
+  width: 50%;
+}
+.aboutPage .aboutMeText {
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.aboutPage .text {
+  margin-bottom: 20px;
+}
+.aboutPage .line {
+  background-color: #313741;
+}
+.aboutPage .profile-menu {
+  padding: 0;
+}
+.aboutPage .profile-menu li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.aboutPage .profile-menu li span {
+  color: #00d7bb;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .aboutPage {
+    padding-top: 80px;
+  }
+  .aboutPage .aboutMe {
+    width: 40%;
+  }
+}
+@media (max-width: 801px) {
+  .aboutPage {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 430px) {
+  .aboutPage {
+    flex-direction: column;
+  }
+  .aboutPage .aboutMe {
+    width: 80%;
+  }
+  .aboutPage .resume {
+    text-align: start;
+  }
+  .aboutPage .resume .myPhotoContainer:before {
+    border: none;
+  }
+}
+@media (max-width: 391px) {
+  .aboutPage {
+    flex-direction: column;
+  }
+}
+@media (max-width: 376px) {
+  .aboutPage {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+}
+@media (max-width: 330px) {
+  .aboutPage {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=About.css.map */

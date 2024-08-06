@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 26px;
+  cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png)
+      17 17,
+    pointer !important;
+  background-color: #22252c;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #313741;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00d7bb;
+  border-radius: 3px;
+}

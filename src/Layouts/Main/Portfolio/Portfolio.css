@@ -1,0 +1,209 @@
+.portfolioPage {
+  position: relative;
+  top: 250px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(rgba(0, 255, 197, 0.7), rgba(0, 255, 197, 0.7)), url("https://comeout.netlify.app/demo/default/img/portfolio/port-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.portfolioPage .portfolio .portText {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: #22252c;
+}
+.portfolioPage .portfolio .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+.portfolioPage .portfolio .cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolioPage .portfolio .col {
+  width: calc(40% - 2rem);
+  margin: 4rem;
+  cursor: pointer;
+}
+.portfolioPage .portfolio .container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.portfolioPage .portfolio #front1 {
+  background-image: url(/src/assets/gamesWebsite.png);
+}
+.portfolioPage .portfolio #front2 {
+  background-image: url(/src//assets/menuWebsite.png);
+}
+.portfolioPage .portfolio .front,
+.portfolioPage .portfolio .back {
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-position: center;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  box-shadow: 0 0 10px solid blue;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.portfolioPage .portfolio .back {
+  background: #363a3c;
+  background: linear-gradient(45deg, #596a72 0%, #363a3c 100%);
+}
+.portfolioPage .portfolio .front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.3;
+  background-color: #000;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.portfolioPage .portfolio .container:hover .front,
+.portfolioPage .portfolio .container:hover .back {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.portfolioPage .portfolio .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.portfolioPage .portfolio .inner {
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+}
+.portfolioPage .portfolio .container .back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+.portfolioPage .portfolio .container .front {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.portfolioPage .portfolio .container:hover .back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.portfolioPage .portfolio .container:hover .front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+.portfolioPage .portfolio .back .inner .nameW {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.portfolioPage .portfolio .back .inner .nameW:after {
+  content: "";
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+.portfolioPage .portfolio .front .inner span {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.portfolioPage .portfolio .info {
+  font-size: 15px;
+}
+.portfolioPage .portfolio .visit {
+  text-decoration: none;
+}
+.portfolioPage .portfolio .wlink {
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 64rem) {
+  .portfolioPage .portfolio .col {
+    width: calc(45% - 2rem);
+    margin: 18px;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .portfolioPage .portfolio .col {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 32rem) {
+  .portfolioPage .portfolio .col {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+.portfolioPage .portfolio #source-link {
+  top: 60px;
+}
+.portfolioPage .portfolio #source-link > i {
+  color: rgb(94, 106, 210);
+}
+.portfolioPage .portfolio #yt-link {
+  top: 10px;
+}
+.portfolioPage .portfolio #yt-link > i {
+  color: rgb(219, 31, 106);
+}
+.portfolioPage .portfolio .meta-link {
+  align-items: center;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+.portfolioPage .portfolio .meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.portfolioPage .portfolio .meta-link > i,
+.portfolioPage .portfolio .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+.portfolioPage .portfolio .meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}/*# sourceMappingURL=Portfolio.css.map */
