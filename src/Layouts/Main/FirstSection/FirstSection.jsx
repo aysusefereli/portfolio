@@ -5,9 +5,11 @@ import "aos/dist/aos.css";
 
 export default function FirstSection() {
   useEffect(() => {
-    AOS.init({
-      duration: 1200, 
-    });
+    if (window.innerWidth > 1024) {
+      AOS.init({
+        duration: 1200,
+      });
+    }
   }, []);
 
   return (

@@ -7,9 +7,11 @@ import "aos/dist/aos.css";
 
 export default function Education() {
   useEffect(() => {
-    AOS.init({
-      duration: 1500,
-    });
+    if (window.innerWidth > 1024) {
+      AOS.init({
+        duration: 1500,
+      });
+    }
   }, []);
 
   return (

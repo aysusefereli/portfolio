@@ -7,9 +7,24 @@ import "aos/dist/aos.css";
 
 export default function Experience() {
   useEffect(() => {
-    AOS.init({
-      duration: 1500,
-    });
+    const initAOS = () => {
+      if (window.innerWidth > 1024) {
+        AOS.init({
+          duration: 1500,
+        });
+      } else {
+        AOS.refresh();
+        AOS.init({ disable: true }); 
+      }
+    };
+
+    initAOS();
+
+    window.addEventListener("resize", initAOS);
+
+    return () => {
+      window.removeEventListener("resize", initAOS);
+    };
   }, []);
 
   return (
@@ -24,19 +39,21 @@ export default function Experience() {
                 icon={faBuildingColumns}
               />
             </div>
-            <div class="cd-timeline">
+            <div className="cd-timeline">
               <div className="line1"></div>
               <div className="timeline">
                 <div className="dots">
                   <span className="dot"></span>
                 </div>
                 <div className="content1">
-                  <div data-aos="fade-right" class="heading1">
+                  <div data-aos="fade-right" className="heading1">
                     <h2 className="degree">FRONT-END DEVELOPER</h2>
                     <p className="uni">ITB Techno</p>
                     <p className="unis">MAY 2024 - PRESENT</p>
                   </div>
-                  <span data-aos="fade-left" className="description1">Internship Program</span>
+                  <span data-aos="fade-left" className="description1">
+                    Internship Program
+                  </span>
                 </div>
               </div>
               <div className="lastDot"></div>

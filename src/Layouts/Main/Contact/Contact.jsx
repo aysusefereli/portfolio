@@ -33,9 +33,11 @@ export default function Contact() {
   };
 
   useEffect(() => {
-    AOS.init({
-      duration: 1500,
-    });
+    if (window.innerWidth > 1024) {
+      AOS.init({
+        duration: 1500,
+      });
+    }
   }, []);
 
   return (
