@@ -44,7 +44,11 @@ export default function Contact() {
     <section id="contact" className="contactPage">
       <h2 className="contactText">CONTACT WITH ME</h2>
       <div className="contact">
-        <img data-aos="fade-right" src="/src/assets/email.png" className="contactImg" />
+        <img
+          data-aos="fade-right"
+          src="https://res.cloudinary.com/ds92nfxnc/image/upload/v1723556273/Email_rut8zv.png"
+          className="contactImg"
+        />
         <div data-aos="fade-left" className="form-container">
           <form className="form-content" onSubmit={sendEmail} ref={form}>
             <div className="nameAndEmail">

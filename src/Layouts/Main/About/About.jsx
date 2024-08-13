@@ -18,7 +18,10 @@ export default function About() {
     <section id="about" className="aboutPage">
       <div data-aos="fade-right" className="resume">
         <div className="myPhotoContainer">
-          <img className="myPhoto" src="/src/assets/myPhoto.jpeg" />
+          <img
+            className="myPhoto"
+            src="https://res.cloudinary.com/ds92nfxnc/image/upload/v1723556274/myPhoto_s0z1pd.jpg"
+          />
         </div>
         <div class="resume-btn">
           <button href="#">

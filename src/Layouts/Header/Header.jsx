@@ -41,7 +41,11 @@ const Header = () => {
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <img className="aysu" src="/src/assets/aysu.png" alt="aysu.png"/>
+        <img
+          className="aysu"
+          src="https://res.cloudinary.com/ds92nfxnc/image/upload/v1723556273/aysu_czxo5c.png"
+          alt="aysu.png"
+        />
       </div>
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul>
