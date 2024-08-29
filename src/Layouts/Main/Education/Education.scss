@@ -230,6 +230,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .eduText {
+    font-size: 35px !important;
+  }
+}
+
 @media (max-width: 450px) {
   .educationPage {
     white-space: nowrap;
@@ -250,7 +256,8 @@
     .description1 {
       top: 105px;
     }
-    .content1, .content2 {
+    .content1,
+    .content2 {
       margin-left: 90px;
     }
     .description2 {

@@ -204,6 +204,11 @@
     line-height: 2;
   }
 }
+@media (max-width: 500px) {
+  .eduText {
+    font-size: 35px !important;
+  }
+}
 @media (max-width: 450px) {
   .educationPage {
     white-space: nowrap;
@@ -225,7 +230,8 @@
   .educationPage .description1 {
     top: 105px;
   }
-  .educationPage .content1, .educationPage .content2 {
+  .educationPage .content1,
+  .educationPage .content2 {
     margin-left: 90px;
   }
   .educationPage .description2 {

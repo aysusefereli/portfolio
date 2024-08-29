@@ -84,6 +84,9 @@
     width: 300px;
     height: 250px;
   }
+  .contactPage .contactText {
+    font-size: 35px;
+  }
   .contactPage input,
   .contactPage textarea {
     width: 300px !important;

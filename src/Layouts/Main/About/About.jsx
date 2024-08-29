@@ -53,12 +53,13 @@ export default function About() {
             <span>Nationality: </span> Azerbaijan
           </li>
           <li>
-            <span>Address: </span> 24 Nasraddin Tusi street, Khatai district,
+            <span>Address: </span>
+             {/* 24 Nasraddin Tusi street, Khatai district, */}
             Baku, Azerbaijan
           </li>
-          <li>
+          {/* <li>
             <span>Phone: </span> (+994) 77 366 51 51
-          </li>
+          </li> */}
           <li>
             <span>E-Mail: </span> sefereliaysu2@gmail.com
           </li>

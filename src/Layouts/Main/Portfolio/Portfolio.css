@@ -206,4 +206,10 @@
   color: white;
   font-family: "Rubik", sans-serif;
   transition: color 600ms;
+}
+
+@media (max-width: 500px) {
+  .portText {
+    font-size: 35px !important;
+  }
 }/*# sourceMappingURL=Portfolio.css.map */

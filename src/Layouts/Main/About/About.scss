@@ -110,6 +110,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .aboutMeText {
+    font-size: 35px !important;
+  }
+}
+
 @media (max-width: 430px) {
   .aboutPage {
     flex-direction: column;
